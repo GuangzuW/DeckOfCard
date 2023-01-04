@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-import org.w3c.dom.CDATASection;
-
 public class Deck {
     private List<Card> deck;
 
@@ -34,5 +32,8 @@ public class Deck {
             deck.set(toSwap,c);
         }
     }
-
+    @Override
+    public String toString() {
+        return "Deck [deck=" + deck + "]";
+    }
 }
